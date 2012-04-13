@@ -45,3 +45,6 @@ platforms :jruby do
     gem 'therubyrhino'
   end
 end
+
+gem "torquebox-rake-support"
+gem "torquebox"
