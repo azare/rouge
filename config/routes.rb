@@ -1,4 +1,16 @@
 Rouge::Application.routes.draw do
+
+  resources :reviews
+
+  root :to => "guide#index"
+  match 'guide/:action/:id' => 'guide'
+
+  resources :reviewers
+
+  resources :restaurants
+
+  resources :administrators
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
